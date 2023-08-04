@@ -9,7 +9,7 @@ include_once '../config.php';
 include_once '../util.php';
 
 //ツイートデータ操作モデルを読み込む
-include_once '../Models/tweets.php';
+include_once '../models/tweets.php';
 
 
 //TODO:ログインチェック

@@ -9,7 +9,7 @@ include_once '../config.php';
 include_once '../util.php';
  
 // ユーザーデータ操作モデルを読み込み
-include_once '../Models/users.php';
+include_once '../models/users.php';
  
 // ログイン結果
 $try_login_result = null;
@@ -25,7 +25,7 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
         saveUserSession($user);
  
         // ホーム画面へ遷移
-        header('Location: ' . HOME_URL . 'Controllers/home.php');
+        header('Location: ' . HOME_URL . 'controllers/home.php');
         exit;
     } else {
         // ログイン結果を失敗にする

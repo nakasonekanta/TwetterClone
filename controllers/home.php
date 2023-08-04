@@ -9,7 +9,7 @@ include_once '../config.php';
 include_once '../util.php';
 
 //ツイートデーターを操作モデルを読み込む
-include_once '../Models/tweets.php';
+include_once '../models/tweets.php';
 
 
 
@@ -25,7 +25,7 @@ if (!$user) {
 $view_user = $user;
 //ツイート一覧
 //　TODO: モデルから取得する
-$view_tweets = findTWEETS($user);
+$view_tweets = findTweets($user);
  
 //画面表示
 include_once '../Views/home.php';
